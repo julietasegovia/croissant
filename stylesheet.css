@@ -1,0 +1,80 @@
+@font-face {
+    font-family: title;
+    src: url(ClashGrotesk-Semibold.otf);
+}
+
+@font-face {
+    font-family: subtitle;
+    src: url(Comico-Regular.otf);
+}
+
+@font-face {
+    font-family: smalltitle;
+    src: url(ClashGrotesk-Medium.otf);
+}
+
+body, html{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    width: 100%
+}
+
+.top-thing, .content-container{
+    width: 100%;
+    margin-top: -20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.bg-container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.bg-container img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    filter: blur(2.5px);
+}
+
+.title-container{
+    margin-top: -650px;
+    margin-left: 50px;
+    z-index: 10;
+}
+
+.title{
+    font-family: title;
+    color: #fce6d1;
+    font-size: 120px;
+}
+
+.small-title{
+    font-family: smalltitle;
+    font-size: 40px;
+    margin-top: -90px;
+    color: #fdead7;
+    margin-left: 140px;
+}
+
+.content-container{
+    background-color: #fdead7;
+    z-index: 20;
+    margin-top: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.croissantin{
+    width: 700px;
+}
