@@ -125,11 +125,16 @@ body, html{
 
 .family-container{
     background-color: #41250b;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .cousins{
     display: flex;
     justify-content: space-around;
+    align-items: center;
+    margin-left: 100px;
 }
 
 .cousin-container{
@@ -143,6 +148,18 @@ body, html{
     height: 100%;
     border-radius: 30px;
     border: 3px solid #fee3c72a;
+    animation: fadeIn linear;
+    animation-timeline: view();
+    animation-range: entry 0% entry 60%;
+}
+
+.cousin-content{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    animation: fadeIn linear;
+    animation-timeline: view();
+    animation-range: entry 0% entry 60%;
 }
 
 .cousin-name{
@@ -150,4 +167,13 @@ body, html{
     font-family: title;
     font-size: 40px;
     color: #fee3c7;
+}
+
+.cousin-info{
+    width: 350px;
+    text-align: center;
+    margin-top: -20px;
+    font-family: smalltitle;
+    font-size: 20px;
+    color: #d7b99c;
 }
